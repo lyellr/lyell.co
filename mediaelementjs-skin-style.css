@@ -1,0 +1,21 @@
+#audio-container {
+	max-width:360px;
+	height:30px;
+	padding:160px 188px;
+	margin:0 auto;
+	background:url(lib/light.png) 0 8px;
+}
+
+#video-container {
+	max-width:1280px;
+	margin-bottom: 40px;
+	background:url(lib/shadow.png) 0 600px no-repeat;
+}
+
+.mejs-container {
+	box-shadow:0 0 18px rgba(0, 0, 0, .2);
+}
+
+#credits {
+	text-align:center;
+}

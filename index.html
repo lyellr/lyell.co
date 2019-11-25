@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head>
+
+	<script type="application/ld+json">
+	{
+	  "@context" : "http://schema.org",
+	  "@type" : "MusicGroup",
+	  "name" : "Lyell Evans Roeder",
+	  "url" : "http://www.lyell.co",
+	  "sameAs" : [
+	  	"www.lyellevans.com"
+	    "http://www.facebook.com/lyellevansroeder",
+	    "https://www.linkedin.com/in/lyellevansroeder",
+	    "https://soundcloud.com/lyell"
+	  ],
+	  "potentialAction":{
+	    "@type":"ListenAction",
+	    "target":[
+	      {
+	        "@type":"EntryPoint",
+	        "urlTemplate":"http://www.example.com/album/Artpop/?autoplay=true",
+	        "inLanguage":"English",
+	        "actionPlatform":[
+	          "http://schema.org/DesktopWebPlatform",
+	          "http://schema.org/IOSPlatform",
+	          "http://schema.org/AndroidPlatform"
+	        ]
+	      }
+	    ],
+	    "expectsAcceptanceOf":{
+	      "@type":"Offer",
+	      "eligibleRegion":[
+	        {
+	          "@type":"Country",
+	          "name":"US"
+	        },
+	        {
+	          "@type":"Country",
+	          "name":"UK"
+	        },
+	        {
+	          "@type":"Country",
+	          "name":"FR"
+	        },
+	        {
+	          "@type":"Country",
+	          "name":"CA"
+	        }
+	      ]
+	    }
+	}
+	</script>
+
+
+	<meta charset="utf-8"/>
+	<meta name="author" content="Lyell Evans Music LLC" />
+	<meta name="description" content="Lyell Evans Music LLC offers film scoring, music production, music instruction, and software development services. Lyell is also a solo artist and member of electronic duo Tigers Are Bad For Horses.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="google-site-verification" content="9-IUJjPXcS1HhYAt1I-CnoyMj0Q4nrOInRJ3O70qAC4" />
+	<meta http-equiv="Cache-control" content="no-store">
+
+	<title>lyell.co</title>
+
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<!-- jQuery Files -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+	<!-- Stylesheets -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+
+	<!-- Audio Player Support -->
+	<script type="text/javascript" src="js/audio-player.js"></script>
+	<link href="css/audio-player.css" rel="stylesheet">
+
+	<!-- JS Nav -->
+	<script type="text/javascript" src="js/nav.js"></script>
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7cOpen+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="https://use.typekit.net/mjo7vzk.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<!-- Pause music for other content -->
+	<script type ='text/javascript'>
+
+		window.ready = function() {
+			document.getElementById("reel1").document.addEventListener('click', audio_pause());
+			document.getElementById("reel2").document.addEventListener('click', audio_pause());
+		};
+		
+	</script>
+
+</head>
+<body>
+<div class="wrapper">
+	<div class="splash_preloader"></div>
+
+	<div class="splash_body">
+		<div id="splash_logo">
+			<center>
+				<img src="img/lcllc.png" alt="lyell evans roeder" class="splash_logo" />
+				<div class="lcllc_text">lyell evans roeder</div>
+			</center>
+			<br/>
+			<div class="splash_line"></div>
+		</div>
+
+		<!-- LARGE SCREEN TOP MENU -->
+
+		<ul class="splash_nav" id="splash_section_nav">
+			<li><a href="#scores" id="show_scores">film/game scores</a></li>
+			<li><a href="#production" id="show_production">production</a></li>
+			<li><a href="#solo" id="show_solo">solo piano</a></li>
+			<li><a href="http://www.tigersarebadforhorses.com" target="_blank">tabfh</a></li>
+			<li><a href="#instruction" id="show_teaching">music instruction</a></li>
+			<!--<li><a href="#development" id="show_software">software development</a></li>-->
+		</ul>
+
+		<!-- MOBILE MENU HAMBURGER -->
+
+		<div class="splash_nav_mobile">
+			<div class="splash_nav_mobile_container">
+				<button onclick="open_menu_mobile()" class="splash_nav_button"><img src="img/ic_menu_white.svg"></button>
+				<div class="splash_nav_mobile_logo">
+					<a href="#splash">lyell evans roeder</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- MOBILE MENU -->
+
+		<div class="splash_nav_mobile_menu" id="splash_nav_mobile_menu">
+			<div class="splash_nav_mobile_menu_container" id="splash_nav_mobile_menu_container">
+				<button><img src="img/ic_close_white.svg"></button>
+				<div class="splash_nav_mobile_menu_container">
+					<ul id="splash_nav_mobile_menu_items">
+						<li><a href="#scores" id="show_scores">film/game scores</a></li>
+						<li><a href="#production" id="show_production">production</a></li>
+						<li><a href="#solo" id="show_solo">solo piano</a></li>
+						<li><a href="http://www.tigersarebadforhorses.com" target="_blank">tigers are bad for horses</a></li>
+						<li><a href="#instruction" id="show_teaching">music instruction</a></li>
+						<!--<li><a href="#development" id="show_software" onclick="close_menu_mobile()">software development</a></li>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- SPLASH PAGE -->
+
+		<div class="splash_init">
+			<p style="text-align:center">I am a Los Angeles based composer for screen, producer, and member of electronic/alt pop duo Tigers Are Bad For Horses.</p>
+			<div class="splash_mobile_links">
+				<ul>
+					<li><a href="#scores" id="show_scores">film/game scores</a></li>
+					<li><a href="#production" id="show_production">production</a></li>
+					<li><a href="#solo" id="show_solo">solo piano</a></li>
+					<li><a href="http://www.tigersarebadforhorses.com" target="_blank">tigers are bad for horses</a></li>
+					<li><a href="#instruction" id="show_teaching">music instruction</a></li>
+					<!--<li><a href="#development" id="show_software">software development</a></li>-->
+				</ul>
+			</div>
+		</div>
+
+		<!-- DIVIDER -->
+
+		<div class="menu_line splash_line"></div>
+
+		<!-- FILM/GAME SCORE PAGE -->
+		
+		<div class="splash_scores">
+			<p style="text-align:center;font-weight:300;font-size:1.4em">Film/Game Scores</p><br/>
+			<p style="">I compose dynamic, compelling music for film, video game, and advertisement. I also provide in house SFX, foley, mixing, mastering, and voiceover.</p><br/>
+			<p style="text-align:center;font-weight:300;font-size:1.4em;padding:0;margin;0;">Video Game Reel (True Fear 2)</p>
+			<p style="text-align:center;font-weight:300;font-size:.7em">Please <a href='#scores' onclick='audio_pause()'>pause</a> music before playing the reel.</p>
+			<div class="videoWrapper">
+				<iframe src="https://player.vimeo.com/video/215905842?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" id="reel1" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+			<br/>
+			<p>I began playing piano as a child, variously studying jazz and classical performance and composition. Over the past five years I written music for a wide breadth of films that span documentary, narrative, political, and advertisement as well as several video games. My scores draw from my roots playing and studying jazz and classical piano, my experience writing and producing modern electronic music, and my studies of narrative forms as a writer and composer.</p><br/>
+			<p style="text-align:center;font-weight:300;font-size:1.4em">Cinematic Reel (Various)</p>
+			<p style="text-align:center;font-weight:300;font-size:.7em">Please <a href='#scores' onclick='audio_pause()'>pause</a> music before playing the reel.</p>
+			<div class="videoWrapper">
+				<iframe src="https://player.vimeo.com/video/201367011?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" id="reel2" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+			</div>
+			
+			<br/>
+			<p style="text-align:center">Selected Compositon Credits and Current Projects:</p>
+			<p style="text-align:center;font-size:.85em">
+				<a href="https://www.seedandspark.com/fund/the-language-of-laughter-1">Dreams of Daraa</a> (In Production)&nbsp;&nbsp;&nbsp;&nbsp;<i>(2017)&nbsp;&nbsp;Documentary Feature</i><br/>
+				Untitled (In Production)&nbsp;&nbsp;&nbsp;&nbsp;<i>(2017)&nbsp;&nbsp;Video Game</i><br/>
+				Untitled (In Production)&nbsp;&nbsp;&nbsp;&nbsp;<i>(2017)&nbsp;&nbsp;Video Game</i><br/>
+				True Fear 2 (In Production)&nbsp;&nbsp;&nbsp;&nbsp;<i>(2017)&nbsp;&nbsp;Video Game</i><br/>
+				<a href="https://www.startnext.com/en/ideasinmotion">SINGA Deutschland Ideas in Motion</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>(2017)&nbsp;&nbsp;Web</i><br/>
+				<a href="http://www.wkkf.org/what-we-do/featured-work/yeswecode-equips-youth-with-coding-skills">W. K. Kellogg Foundation</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>(2011-2016)&nbsp;&nbsp;TV/Radio/Web</i><br/>
+				<a href="https://vimeo.com/165573647">Gimme Shelter</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>(2016)&nbsp;&nbsp;Narrative Short</i><br/>
+				<a href="https://www.youtube.com/watch?v=MGg-F9CzQuw">David Catania for Washington D.C. Mayor</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>(2015)&nbsp;&nbsp;TV/Web</i><br/>
+				<a href="http://www.imdb.com/title/tt5131532/">Safe Space</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>(2015)&nbsp;&nbsp;TV</i><br/>
+				<a href="http://mentalhealthchannel.tv/episode/trauma">MentalHealthChannel.tv - The Inside Story: Trauma</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>(2014)&nbsp;&nbsp;TV</i><br/>
+				<a href="http://www.evansterrett.com/elise.html">Elise</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>(2014)&nbsp;&nbsp;Documentary Short</i><br/>
+				<a href="https://vimeo.com/95597628">Silver Alert</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>(2014)&nbsp;&nbsp;Narrative Short</i><br/>
+				<a href="https://vimeo.com/65348059">Muse</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>(2013)&nbsp;&nbsp;Narrative Short</i><br/>
+				<a href="https://vimeo.com/32289151">Bill Bryant for Seattle Port Commission</a>&nbsp;&nbsp;&nbsp;&nbsp;<i>(2011)&nbsp;&nbsp;TV 60s Spot</i><br/>
+			</p>
+
+		</div>
+
+
+		<div class="splash_production">
+			<p style="text-align:center;font-weight:300;font-size:1.4em">Production</p><br/>
+			<p>I work with artists in genres including rock, soul, hip-hop, folk, a capella, and electronic. I help the artists I work with realize the potential of their music. I also offer my skills as a multi-instrumentalist to projects. Recent work includes:</p>
+			<br/>
+			<!--<p style="text-align:center;font-weight:300;font-size:1.4em">Featured</p>-->
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6"><a href="#production" onclick="set_play('production', 0)"><img src="img/helium_600.png" alt="Tigers Are Bad For Horses - Helium" width="100%" style="padding-bottom:20px"></a></div>
+				<div class="col-lg-9 col-md-6 col-sm-6">
+					<h6 style="margin:0px 0px 10px 0px;color:black;">Tigers Are Bad For Horses - Helium</h6>
+					<p><a style="font-weight:bold;color:black;" href="#production" onclick="set_play('production', 0)">Listen Here</a><br/>
+					<a style="font-weight:bold;color:black;" href="https://itunes.apple.com/us/album/helium-single/id1219093103" target="_blank">Buy on iTunes</a></p>
+					<p>Helium is the most recent single of my duo, <a href="http://www.tigersarebadforhorses.com" target="_blank">Tigers Are Bad For Horses</a>. I produced, co-wrote the track, and played the instrumental.</p>
+				</div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6"><a href="#production" onclick="set_play('dbsd', 0)"><img src="img/dbsd_600.png" alt="Don't Be Sad Dance" width="100%" style="padding-bottom:20px"></a></div>
+				<div class="col-lg-9 col-md-6 col-sm-6">
+					<h6 style="margin:0px 0px 10px 0px;color:black;">Lyell - Don't Be Sad Dance</h6>
+					<p><a style="font-weight:bold;color:black;" href="#production" onclick="set_play('dbsd', 0)">Listen Here</a><br/>
+					<a style="font-weight:bold;color:black;" href="https://itunes.apple.com/us/album/dont-be-sad-dance/id1203558256" target="_blank">Buy on iTunes</a></p>
+					<p>Don't Be Sad Dance is a solo project I created in late 2016 and released February 14, 2017. My intention was to create an emotionally compelling, coherent work that played with vocal and instrumental production techniques to that end. <!--Check out Tapsongz's Sara Carioscia's review <a href="http://www.tapsongz.com/dont-be-sad-dance" target="_blank">here</a>.</p>-->
+				</div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6"><a href="#production" onclick="set_play('production', 1)"><img src="img/embers_600.png" alt="Tigers Are Bad For Horses - Embers" width="100%" style="padding-bottom:20px"></a></div>
+				<div class="col-lg-9 col-md-6 col-sm-6">
+					<h6 style="margin:0px 0px 10px 0px;color:black;">Tigers Are Bad For Horses - Embers</h6>
+					<p><a style="font-weight:bold;color:black;" href="#production" onclick="set_play('production', 1)">Listen Here</a><br/>
+					<a style="font-weight:bold;color:black;" href="https://itunes.apple.com/us/album/embers-single/id1125335552" target="_blank">Buy on iTunes</a></p>
+					<p>Embers was the third single from <a href="http://www.tigersarebadforhorses.com" target="_blank">Tigers Are Bad For Horses</a>. I produceed, co-wrote the track, and played the majority of the instrumental. Embers to date has over 300,000 streams online.</p>
+				</div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6"><a href="#production" onclick="set_play('ddls', 0)"><img src="img/ddls_600.png" alt="Distant Dreams and Love Songs" width="100%" style="padding-bottom:20px"></a></div>
+				<div class="col-lg-9 col-md-6 col-sm-6">
+					<h6 style="margin:0px 0px 10px 0px;color:black;">Distant Dreams and Love Songs</h6>
+					<p><a style="font-weight:bold;color:black;" href="#production" onclick="set_play('ddls', 0)">Listen Here</a><br/>
+					<a style="font-weight:bold;color:black;" href="https://itunes.apple.com/us/album/distant-dreams-and-love-songs/id1084487475" target="_blank>">Buy on iTunes</a></p>
+					<p>Distant Dreams and Love Songs is a nine movement chamber orchestral suite I wrote in early 2015 and recorded in January of 2016. Arranged for piano, strings, flute, bassoon, and percussion, DDLS explores the hope, fear, and isolation that distance imposes on love.</p>
+				</div>
+			</div>
+			<br/>
+			<div class="row">
+				<div class="col-lg-3 col-md-6 col-sm-6"><a href="#production" onclick="set_play('tabfh', 0)"><img src="img/tabfh_600.png" alt="Tigers Are Bad For Horses - TABFH" width="100%" style="padding-bottom:20px"></a></div>
+				<div class="col-lg-9 col-md-6 col-sm-6">
+					<h6 style="margin:0px 0px 10px 0px;color:black;">Tigers Are Bad For Horses - TABFH</h6>
+					<p><a style="font-weight:bold;color:black;" href="#production" onclick="set_play('tabfh', 0)">Listen Here</a><br/>
+					<a style="font-weight:bold;color:black;" href="https://itunes.apple.com/us/album/tabfh-single/id1058239992" target="_blank">Buy on iTunes</a></p>
+					<p>TABFH is the debut EP of my duo, <a href="http://www.tigersarebadforhorses.com" target="_blank">Tigers Are Bad For Horses</a>. Mary Ellen Funke and I co-wrote and produced all three tracks, and I did the majority of the mixing and instrumental production. TABFH has over 200,000 total streams online.</p>
+				</div>
+			</div>
+			<br/>
+
+			<!--<p>Other Recent Production Credits:</p>
+			<p>
+				<a href="https://open.spotify.com/artist/0FCunYSwvmtk1jprFxw43T">Lyell</a> - <i>Don't Be Sad Dance</i> (album): Writing, singing, production, mixing&nbsp;&nbsp;&nbsp;<a href="https://open.spotify.com/artist/0FCunYSwvmtk1jprFxw43T" target="_blank">spotify</a>&nbsp;&nbsp;<a href="https://soundcloud.com/lyell/sets/dont-be-sad-dance" target="_blank">soundcloud</a>&nbsp;&nbsp;<a href="https://itunes.apple.com/us/album/dont-be-sad-dance/id1203558256" target="_blank">itunes</a><br/>
+
+				<a href="http://www.tigersarebadforhorses.com" target="_blank">Tigers Are Bad For Horses</a> (full discography): Writing, production, mixing&nbsp;&nbsp;&nbsp;<a href="https://open.spotify.com/artist/7eJPZuQEqiZ6uOLXJneb3X" target="_blank">spotify</a>&nbsp;&nbsp;<a href="https://soundcloud.com/tigersarebadforhorses" target="_blank">soundcloud</a>&nbsp;&nbsp;<a href="https://itunes.apple.com/us/artist/tigers-are-bad-for-horses/id917064045" target="_blank">itunes</a><br/>
+
+				Lyell Evans Roeder - <i>Distant Dreams and Love Songs</i> (album): Writing, production, mixing&nbsp;&nbsp;&nbsp;<a href="https://open.spotify.com/artist/3F66I1N9oBeHsyddwljvhz" target="_blank">spotify</a>&nbsp;&nbsp;<a href="https://soundcloud.com/lyell/sets/distant-dreams-and-love-songs" target="_blank">soundcloud</a>&nbsp;&nbsp;<a href="https://itunes.apple.com/us/album/distant-dreams-and-love-songs/id1084487475" target="_blank">itunes</a><br/>
+
+				<a href="https://thegwvibes.com/" target="_blank">The GW Vibes</a> - <i>Good Vibrations</i> (album): Production, mixing, mastering&nbsp;&nbsp;&nbsp;<a href="https://open.spotify.com/album/6clv37brP0rRg83TrSUdLb" target="_blank">spotify</a>&nbsp;&nbsp;<a href="https://itunes.apple.com/us/album/good-vibrations-ep/id1108236319" target="_blank">itunes</a><br/>
+
+				<a href="http://www.bencoolenmusic.com/" target="_blank">Bencoolen</a> - <i>In Color</i> (album): Production, mixing&nbsp;&nbsp;&nbsp;<a href="https://open.spotify.com/artist/1MUFLr6TyUzrlKW61yATQN" target="_blank">spotify</a>&nbsp;&nbsp;<a href="https://soundcloud.com/bencoolen-1/sets/in-color-album" target="_blank">soundcloud</a>&nbsp;&nbsp;<a href="https://itunes.apple.com/us/album/in-color-ep/id1113763508" target="_blank">itunes</a><br/>
+			</p>-->
+		</div>
+
+		<div class="splash_solo">
+			<p style="text-align:center;font-weight:300;font-size:1.4em">Solo Piano</p><br/>
+			<p>I perform in Los Angeles and around the country as a solo pianist or with a trio or combo. My pianistic style is informed by training as a jazz pianist as well as explorations into classical and contemporary music as a pianist and composer.</p>
+			<p>My style and repertoire provide an emotive, refined performance that has enhanced the atmosphere of clubs, restaurants, hotels, and other venues looking to push their live music beyond the norm. For booking and rates please email <a href="mailto:booking@lyell.co">booking@lyell.co</a>.</p>
+			<div class="row">
+				<h6 class="listen-hero" onclick="set_play('solo',0)">Listen Here</h6>
+			</div>
+
+		</div>
+
+		<div class="splash_teaching">
+			<p style="text-align:center;font-weight:300;font-size:1.4em">Music Instruction</p><br/>
+			<p>I teach piano and music production/composition private lessons in the Los Angeles area and remotely over Skype to adults and children of all ages. I tailor lessons to your schedule and learning goals, balancing fundamentals with improvisation techniques, repertoire development, and a relaxed learning environment. Please <a href="mailto:lyell@lyellevans.com">contact me</a> for more information or to chat about your learning goals.</p>
+			<br/>
+			<p>Testimonials</p>
+			<p>
+				&quot;Lyell provided private lessons to my two sons for several years and we were so pleased with their progress. His approach to music stems from extensive training and experience and is very passionate. He took the needed time to help guide my boys to greater understanding of music structure, performance, theory and enjoyment. Lyell is always looking for new ways to approach a learning moment and provided performance opportunities that helped them grow as musicians.&quot;&nbsp;&nbsp;<i>-K. McKormick, mother of two students ages 14 and 11</i><br/><br/>
+				&quot;Lyell Roeder is a fantastic piano teacher, not only showing me how to play a piece but explaining the musical theory behind it, notably in my chosen area of the blues. I am blind and was especially impressed that, when planning my lessons, Lyell always goes through pieces with his eyes closed to make sure I would have no trouble.&quot;&nbsp;&nbsp;<i>-D. Konkel, age 66</i><br/><br/>
+				&quot;I can’t say enough great things about Lyell as a piano instructor.  He has an incredible depth of knowledge of the piano and was truly inspirational.  I had never considered jazz as a focus prior to meeting Lyell and I’m grateful for the introduction and strong foundation Lyell provided.  He was also instrumental in teaching how to play with depth and feeling in addition to technical skills. I was fortunate enough to host a recital at our home and met the majority of his other students both young and old and everyone had the same admiration for him and we were very sad to see him move from the east coast.&quot;&nbsp;&nbsp;<i>-J. Reger</i><br/><br/>
+				&quot;Lyell is the rare combination of being both a talented musician and teacher. He is disciplined, yet makes learning music fun. He thinks creatively about the pieces he assigns and gives you the confidence that you will learn them, and learn them well!&quot;&nbsp;&nbsp;<i>-E. Rubin</i><br/>
+
+			</p>
+		</div>
+		<!--<div class="splash_software">
+			<p style="text-align:center;font-weight:300;font-size:1.4em">Software Development</p><br/>
+			<p>I do web developement, design, and project management. I've worked on websites for artists, nonprofit, and corporate clients. I offer compelling copy writing, modern design, competitive rates, and seamless communication throughout the entirety project. Please <a href="mailto:lyell@lyellevans.com">contact me</a> for more information or to discuss a project.</p>
+			<br/>
+			<p>Recent projects:</p>
+			<p>
+				NotMyTaxBreak.org - political action website: <a href="https://www.notmytaxbreak.org" target="_blank">www.notmytaxbreak.org</a><br/>
+				Arthur Roach - web site for actor/model/musician: <a href="http://www.arthurroach.com" target="_blank">www.arthurroach.com</a><br/>
+				Tigers Are Bad For Horses - web site for band: <a href="http://www.tigersarebadforhorses.com" target="_blank">www.tigersarebadforhorses.com</a><br/>
+				Paul C. Roeder - web site for photographer: <a href="http://www.paulcroeder.com" target="_blank">www.paulcroeder.com</a>
+			<br/><br/>
+			<p>Testimonials:</p>
+			<p>
+				&quot;Lyell quickly grasped the best way to present my talents as a performing artist - actor, model, musician. The web site is clean, clear, and very attractive. I am very proud to have it represent me.&quot;&nbsp;&nbsp;<i>-A. Roach, actor, model, musician.</i><br/><br/>
+			</p>
+			</p>
+		</div>-->
+	</div>
+
+
+	<ul id="audio-playlist" style="display:none;"></ul>
+</div>
+<div id="footer">
+	<div id="audio-player">
+		<div id="audio-button-wrapper">
+			<button id="audio-rr-button" onclick='previous_track()'></button>
+			<button id="audio-play-button" onclick='audio_play()'></button>
+			<button id="audio-pause-button" onclick='audio_pause()'></button>
+			<button id="audio-ff-button" onclick='next_track()'></button>
+		</div>
+
+		<div id="audio-current-time" class="audio-seek-time"><i></i></div>
+
+		<progress id="audio-seekbar" value="0" max="1"></progress>
+		
+		<div id="audio-time-left" class="audio-seek-time"></div>
+
+		<div id="audio-current-song" class="audio-seek-time">&nbsp;</div>
+
+	</div>
+</div>
+</body>
+</html>
