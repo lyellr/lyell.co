@@ -1278,7 +1278,7 @@ textarea.form-control {
 }
 
 .splash_body {
-	background-image: url("../img/patterns/concrete_seamless.png");
+	/*background-image: url("../img/patterns/concrete_seamless.png");*/
 	background-repeat: repeat;
 	min-height: 100%;
 }
@@ -1559,7 +1559,7 @@ textarea.form-control {
 }
 
 .wrapper {
-	background-image: url("../img/patterns/concrete_seamless.png");
+	/*background-image: url("../img/patterns/concrete_seamless.png");*/
 	background-repeat: repeat;
 }
 
