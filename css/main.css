@@ -27,12 +27,12 @@ body a:hover {
 
 html, body {
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: auto;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 375px) {
 	html, body {
-		overflow-y: auto;
+		overflow-y: hidden;
 	}
 }
 
@@ -115,6 +115,21 @@ body {
 
 .splash_init {
 	font-size: 80%;
+	padding: 50px 5% 25px 5%;
+}
+
+@media (min-width: 480px) {
+	.splash_init {
+		padding: 50px 15% 25px 15%;
+	}
+}
+
+@media (min-width: 768px) {
+	.splash_init {
+		padding: 50px 20% 25px 20%;
+		max-width: 800px;
+		margin: auto;
+	}
 }
 
 .splash_init p {
@@ -123,28 +138,4 @@ body {
 	text-align: center;
 }
 
-@media (min-width: 1281px) {
-	.splash_init {
-		padding: 50px 0px 25px 0px;
-		width: 800px;
-		margin: auto;
-	}
-}
 
-@media (max-width: 1280px) {
-	.splash_init {
-		padding: 50px 20% 25px 20%;
-	}
-}
-
-@media (max-width: 768px) {
-	.splash_init {
-		padding: 50px 15% 25px 15%;
-	}
-}
-
-@media (max-width: 480px) {
-	.splash_init {
-		padding: 50px 5% 25px 5%;
-	}
-}
