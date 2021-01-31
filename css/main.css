@@ -29,6 +29,13 @@ html, body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
+@media only screen and (max-width: 400px) {
+	html, body {
+		overflow-y: auto;
+	}
+}
+
 body {
   position: relative;
 }
